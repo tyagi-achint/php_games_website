@@ -2,7 +2,7 @@
 
 $server="localhost";
 $username="root";
-$password="";
+$password="Joker.321@";
 $database ="fun_time_fillers";
 
 

@@ -243,7 +243,7 @@ if (document.getElementById("game_2048")) {
             playerScore: playerScore, playerName: playerName
         };
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'SaveScore/2048.php', true);
+        xhr.open('POST', '../SaveScore/2048.php', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.onreadystatechange = function () {
             if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -259,15 +259,6 @@ if (document.getElementById("game_2048")) {
     }
 
     // ...
-
-
-    function reset2048() {
-        setTimeout(function () {
-            location.reload();
-        }, 1)
-
-
-    }
 
 
     function restartGame() {

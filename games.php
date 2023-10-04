@@ -16,10 +16,11 @@
 
 
     <div id="games" class="games-container">
-        <div>
-            <button id="black-jack"><img src="images/black-jack.png" alt="black-jack" />
-                <h4>Black Jack</h4>
-            </button>
+        <div><a href="Games_php/black-jack.php">
+                <button id="black-jack"><img src="images/black-jack.png" alt="black-jack" />
+                    <h4>Black Jack</h4>
+                </button>
+            </a>
         </div>
         <div>
             <button id="Dots&Boxes"><img src="images/Dots&Boxes.jpg" alt="Dots&Boxes_Game" />
@@ -65,26 +66,15 @@
             </button>
         </div>
         <div>
-            <button id="game2048">
-                <img src="images/2048.png" alt="2048" height="90%" width="60%" />
-                <h4>2048</h4>
+            <button id="game2048"><a href="Games_php/2048.php">
+                    <img src="images/2048.png" alt="2048" height="90%" width="60%" />
+                    <h4>2048</h4>
+                </a>
             </button>
         </div>
 
     </div>
 
-    <!-- Games -->
-
-    <?php include 'Games_php/black-jack.php'?>
-    <?php include 'Games_php/Dots&Boxes.php'?>
-    <?php include 'Games_php/Doodle.php'?>
-    <?php include 'Games_php/Snake.php'?>
-    <?php include 'Games_php/Drum_sound.php'?>
-    <?php include 'Games_php/Colour_memory.php'?>
-    <?php include 'Games_php/Tic-Tac-Toe.php'?>
-    <?php include 'Games_php/Connect4.php'?>
-    <?php include 'Games_php/Rock-Paper-Scissors.php'?>
-    <?php include 'Games_php/2048.php'?>
 
 
 

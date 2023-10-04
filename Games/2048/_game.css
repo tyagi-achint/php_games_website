@@ -5,9 +5,11 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 #game_2048 .game{
+    
  
     text-align: center;
     width: 50%;
@@ -31,7 +33,7 @@
     width: 91px;
     height: 91px;
     border: 5px solid #bbada0;
-
+margin: auto;
     font-size: 40px;
     font-weight: bold;
     display: flex;
