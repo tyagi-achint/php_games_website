@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#connect_4 #board_connect4{
+    height: 540px;
+    width: 598px;
+    background-color: deepskyblue;
+    border: 5px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px deepskyblue;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#connect_4  h1 {
+    font-family: Fredoka One;
+    font-weight: 600;
+    font-size: x-large;
+    text-decoration: underline;
+    margin: 10px auto 20px;
+}
+#connect_4  .tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    /* Circle */
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+    border: 3px solid black;
+}
+#connect_4  #winner{
+    margin: 10px auto 20px;
+    font-family: Arima;
+    font-weight: 900;
+
+}
+
+#connect_4 .red-piece {
+    background-color: red;
+}
+
+#connect_4  .yellow-piece {
+    background-color: yellow;
+}
+

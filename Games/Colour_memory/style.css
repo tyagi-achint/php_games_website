@@ -1,0 +1,117 @@
+.colour_memory{
+  text-align: center;
+  background-color: aliceblue;
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: larger;
+  margin: 10px auto 20px ;
+ 
+}
+
+.container {
+  text-align: center;
+
+  margin: auto;
+}
+.playButtons{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 302px;
+  border: 3px solid grey;
+  border-radius: 10px;
+}
+.btn {
+  margin: 0;
+  height: 150px;
+  width: 150px;
+}
+.otherbtn {
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: larger;
+  padding: 6px 14px;
+  display: inline-block;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.otherbtn:hover{
+  color: whitesmoke;
+  background-color: grey;
+}
+h4 {
+  margin: 5mm 0 0 0;
+  font-family: "Press Start 2P", cursive;
+  color: #fef2bf;
+}
+.game-over {
+  background-color: red;
+  opacity: 0.5;
+}
+
+.red {
+  border-top: 2px solid grey;
+  border-right: 2px solid grey;
+  border-radius:  0 0 0 7px;
+
+  background-color: red;
+}
+
+.green {
+  border-right: 2px solid grey;
+  border-radius: 7px 0 0 0;
+  background-color: green;
+}
+
+.blue {
+  border-radius: 0  0 7px   0;
+  background-color: blue;
+}
+
+.yellow {
+  border-bottom: 2px solid grey;
+  border-radius: 0 7px  0 0;
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.howToPlayColour{
+  text-align: left;
+  border: 3px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 grey;
+  background-color: azure;
+
+}
+
+.howToPlayColour h2 {
+  font-family:  cursive;
+  font-size: 2rem;
+  margin: 0;
+  
+}
+
+.howToPlayColour li {
+  font-family: "Acme", sans-serif;
+  list-style: disc;
+  padding-left: 10px;
+  font-size: x-large;
+}
+
+
+.contentHide{
+  display: none !important;
+}

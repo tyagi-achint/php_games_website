@@ -1,0 +1,46 @@
+.blackjack{
+    background-color: aliceblue;
+    text-align: center;
+    width: 80%;
+    padding: 10px 0;
+    margin:0 auto 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0  20px 10px aliceblue;
+}
+h1 {
+    text-align: center;
+    font-family: Fredoka One;
+    font-weight: 600;
+    font-size: xxx-large;
+    text-decoration: underline;
+    margin: 10px auto 0;
+}
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 5px;
+}
+
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 5px;
+}
+
+#hit,
+#stay {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+#results{
+    font-size: large;
+    font-weight: 600;
+    margin: 10px;
+    font-family: Arima;
+}

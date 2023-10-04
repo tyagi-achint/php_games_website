@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' type='image/x-icon' href='images/favicon.png'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Maintenance</title>
+    <style>
+        body {
+            position: relative;
+            background: url(images/maintenance.png) no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+
+        .message {
+            position: absolute;
+            top: 5vh;
+            left: 3vw;
+
+
+        }
+
+        h1 {
+
+            width: fit-content;
+
+            font-size: 50px;
+            font-family: Helvetica, sans-serif;
+            color: #333;
+            background-color: #ffbdad;
+
+        }
+
+
+
+        .message div {
+
+            font: 20px Helvetica, sans-serif;
+            color: #333;
+            text-align: left;
+            font-weight: 600;
+            width: fit-content;
+
+        }
+
+        .message div p {
+            width: fit-content;
+            background-color: #ffbdad;
+
+        }
+
+        .bug {
+            position: absolute;
+            width: 70px;
+            text-align: center;
+            padding: 10px;
+            background-color: transparent;
+            cursor: grab;
+            transition: transform 0.5s;
+        }
+
+        .material-symbols-outlined {
+            position: absolute;
+            font-size: 40px;
+        }
+
+        .bugmessage {
+            position: absolute;
+            bottom: 2vh;
+            right: 3vw;
+            width: fit-content;
+            background-color: #ffbdad;
+
+            font: 20px Helvetica, sans-serif;
+            color: #333;
+            text-align: right;
+            font-weight: 600;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">
+        <h1>We&rsquo;ll be back soon!</h1>
+
+
+        <div>
+            <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. </p>
+            <p> We&rsquo;ll be
+                back online shortly!</p>
+            <p>&mdash; The Team</p>
+        </div>
+
+    </div>
+    <div class="bugmessage">
+        Can you help me catch that bug on the screen?
+    </div>
+
+    <div class="bug">
+        <span class="material-symbols-outlined">
+            bug_report
+        </span>
+    </div>
+
+    <script>
+
+        const bug = document.querySelector('.bug');
+
+        bug.addEventListener('mouseover', () => {
+            moveBug();
+        });
+
+        function moveBug() {
+            const maxX = window.innerWidth - 200;
+            const maxY = window.innerHeight - 200;
+
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+
+            bug.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        }
+
+    </script>
+</body>
+
+</html>

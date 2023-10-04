@@ -1,0 +1,588 @@
+body {
+
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none !important;
+}
+
+/* **************Navbar**************** */
+
+
+nav {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+
+  border-bottom: #d7d7d7 0.1mm solid;
+  text-align: center;
+}
+
+nav a {
+  font-weight: bold;
+  color: black;
+  font-family: "Acme", sans-serif;
+
+}
+
+nav img {
+  height: 40px;
+  width: 120px;
+}
+
+nav .navigation1 a {
+  font-size: 1.5rem;
+}
+
+nav .navigation1 a:hover {
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav .navigation2 a {
+  border: 1px solid black;
+
+
+}
+
+nav .navigation2 a:hover {
+  color: #ffffff;
+  background: black !important;
+}
+
+
+
+nav .navigation1,
+nav .navigation2 {
+  padding: 7px 0;
+
+}
+
+nav .navigation2 a {
+  font-weight: 900;
+  border-radius: 3px;
+  padding: 7px 12px;
+  background: transparent !important;
+  cursor: pointer;
+  font-size: large;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* **************Scrooling_Content**************** */
+
+#scrooling_content {
+  text-align: center;
+  margin: 10rem 0;
+}
+
+#scrooling_content h1 {
+  font-size: 18vw;
+}
+
+/* **************Home Game**************** */
+
+.games-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+.games-container button img {
+  height: 242px;
+  width: 236px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.games-container div {
+  width: 30%;
+
+}
+
+.games-container button {
+  background: none;
+    border: 0;
+}
+
+
+.games-container button h4 {
+  color: #000000;
+  text-align: center;
+  padding: 3mm 0;
+  font-family: "Carter One", cursive;
+}
+
+
+
+.games-container button img:hover {
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* **************More Games**************** */
+
+#more-games {
+  width: 99%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+#more-games a {
+  text-decoration: none;
+  color: black;
+  font-family: "Acme", sans-serif;
+}
+
+#more-games a h5:hover {
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* *************Games page**************** */
+
+#games {
+  padding: 60px 0 0;
+}
+
+#games.games-container div {
+  margin-bottom: 40px;
+}
+
+
+/* --------------------------------------Score-page-------------------------------- */
+
+#score-page {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+#score-page div {
+  width: 45%;
+  margin: 30px 0;
+  background-color: #f5f5f557;
+
+}
+
+tr {
+  border-bottom: 0.1mm solid black;
+}
+
+th {
+  background-color: #BCCEF8;
+  font-size: x-large;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: black;
+}
+
+.game_heading {
+  text-align: center;
+  font-weight: bolder;
+  border: solid;
+  color: black;
+  border-radius: 5px;
+  padding: 5px 0;
+  background-color: transparent;
+}
+
+table {
+  margin: 7mm auto;
+  min-width: 90%;
+  font-family: "Arima", cursive;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#score_h1 {
+  margin: 5mm 0 5mm 3mm;
+  font-family: "Fredoka One", cursive;
+  font-size: 4rem;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #cccccc;
+
+}
+
+#s_no {
+  text-align: left;
+  padding-left: 3mm;
+}
+
+td:nth-of-type(1) {
+  text-align: left;
+  padding-left: 3mm;
+}
+
+td {
+  padding: 2mm 5mm 0 5mm;
+}
+
+/* --------------------------------------About-page-------------------------------- */
+
+#aboutpage {
+  width: 90%;
+  margin: 50px auto;
+}
+
+#aboutpage .top {
+  background-color: aliceblue;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+#aboutpage .top h1 {
+  font-family: Dancing Script;
+  font-size: 3.5rem;
+}
+
+#aboutpage .top h4 {
+  font-family: Arima;
+  font-size: 1rem;
+}
+
+#aboutpage hr {
+
+  margin: 10px auto;
+}
+
+#aboutpage .paraheading {
+  text-decoration: underline;
+  letter-spacing: .3px;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-family: Carter One;
+
+}
+
+#aboutpage .pagebody {
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+#aboutpage .pagebody p {
+  margin-bottom: 10px;
+  font-family: Arima;
+  font-weight: 600;
+}
+
+#aboutpage .pagebody ul {
+  list-style-type: disc !important;
+  margin-left: 20px;
+  padding-left: 20px;
+
+}
+
+#aboutpage .pagebody li {
+  font-family: Fredoka One;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+#aboutpage .team {
+  background-color: aliceblue;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+#aboutpage .team p {
+  font-size: 1.18rem;
+  margin: 20px 0;
+  font-family: Arima;
+}
+
+#aboutpage .teamMedia {
+  display: flex !important;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+#aboutpage .teamMedia img {
+  border-radius: 10px;
+  border: 1px solid grey;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+#aboutpage .teamMedia-body {
+  flex: 1;
+}
+
+#aboutpage .teamMedia-body h1 {
+  font-family: Fredoka One;
+  margin: 0 0 10px;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+#aboutpage .teamMedia-body h1 a {
+  color: black;
+}
+
+#aboutpage .social a {
+  margin-right: 10px;
+}
+
+#aboutpage .social img {
+  margin-top: 10px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 0;
+}
+
+/* --------------------------------------Feedback-page-------------------------------- */
+
+
+#feedback {
+  background-color: rgb(177, 222, 232);
+  margin: 8mm 1cm;
+  border: none;
+  border-radius: 7mm;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+
+#feedback .col {
+  width: 45%;
+}
+
+#feedback img {
+  margin: 2.5cm 2cm 0 3.5cm;
+}
+
+#feedback input {
+  margin: 0 0 1mm 0;
+  display: block;
+  width: 60%;
+  background: #f7f7f7;
+  font-family: "Fredoka One", cursive;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666;
+  border-radius: 5mm;
+  padding: 2mm;
+  border: none;
+  outline: none;
+}
+
+#feedback textarea#subject {
+  font-family: "Fredoka One", cursive;
+  height: 150px;
+  width: 60%;
+  background: #f7f7f7;
+  color: #666;
+  border-radius: 5mm;
+  padding: 2mm;
+  border: none;
+  outline: none;
+}
+
+#feedback #submit,
+#feedback #reset {
+  width: 25%;
+  display: inline;
+  margin: 5mm 4mm 8mm 4mm;
+}
+
+#feedback #submit:hover,
+#feedback #reset:hover {
+  background-color: #666;
+  color: #f7f7f7;
+  box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+#feedback h2 {
+  font-family: "Fredoka One", cursive;
+  margin: 1cm 0 7mm;
+  color: #666;
+}
+
+#rating label span {
+  margin: 0 7mm 0 7mm;
+  color: #666;
+  font-size: 1cm;
+}
+
+#rating input {
+  display: inline;
+  width: auto;
+  margin: 0 8mm 0 9mm;
+}
+
+#rating input.radio {
+  height: 1cm;
+  width: 0.7cm;
+}
+
+#rating input.radio#Angry,
+#rating input.radio#Normal,
+#rating input.radio#Happy {
+  accent-color: lightslategrey;
+  cursor: pointer;
+}
+
+#rating input.radio#Angry:checked~label span#angry,
+label span#angry:hover {
+  color: red;
+}
+
+#rating input.radio#Happy:checked~label span#happy,
+label span#happy:hover {
+  color: #54b435;
+}
+
+#rating input.radio#Normal:checked~label span#normal,
+label span#normal:hover {
+  color: #fdff00;
+}
+
+#feedback .col img:hover {
+  will-change: transform;
+  transform: perspective(300px) rotateX(1.38deg) rotateY(-4.01deg) scale3d(1.1, 1.1, 1.1);
+}
+
+#threadAlert {
+  background-color: #C3EDC0;
+  margin: auto;
+  padding: 8px 10px;
+  position: relative;
+  text-align: center;
+}
+
+#closeAlert {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  color: #6f6f6f;
+  float: right;
+  font-size: 26px;
+  font-family: Carter One;
+
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+
+
+/* **************Footer**************** */
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 10px;
+
+}
+
+footer a {
+  color: rgb(197, 197, 197) !important;
+  text-decoration: underline !important;
+}
+
+
+@media only screen and (min-width: 880px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    display: inline;
+    margin-left: 10px;
+  }
+
+  nav .navigation1 li {
+    margin-left: 35px;
+
+  }
+
+  nav .navigation2 {
+    float: right;
+  }
+}
+
+
+@media only screen and (max-width: 880px) {
+
+  #more-games,
+  .games-container,
+  #games {
+    display: none;
+  }
+
+
+  #aboutpage .teamMedia {
+    display: inherit !important;
+    width: 60%;
+
+  }
+
+  nav .navigation2 li {
+    margin-bottom: 25px;
+  }
+
+  #feedback {
+    padding: 10px;
+
+    display: inherit;
+  }
+
+  #feedback img {
+    display: none;
+  }
+
+  #feedback .col {
+    width: 100%;
+  }
+
+  #feedback form {
+    text-align: center;
+  }
+
+  #feedback input {
+    display: initial;
+    margin-bottom: 20px;
+  }
+  
+
+  #score-page div {
+    width: 90%;
+    margin: 30px auto;
+}
+#score-page td {
+  font-size: small;
+}
+#score_h1 {
+
+  font-size: large;
+}
+}
+
+
+
+
+
+
+
+
+
+
+

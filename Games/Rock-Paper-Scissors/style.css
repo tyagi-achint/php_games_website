@@ -1,0 +1,71 @@
+.Rock-Paper-Scissors{
+    background-color: aliceblue;
+    text-align: center;
+    width: 80%;
+    padding: 10px 0;
+    margin:0 auto 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0  20px 10px aliceblue;
+}
+h1 {
+    text-align: center;
+    font-family: Fredoka One;
+    font-weight: 600;
+    font-size: xxx-large;
+    text-decoration: underline;
+    margin: 10px auto 0;
+}
+
+
+.imgMatch{    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;}
+#opponent-choice {
+    width: 240px;
+    height: 240px;
+    /* background-color: cyan; */
+    margin-top: 10px;
+}
+
+#your-choice {
+    width: 240px;
+    height: 240px;
+    /* background-color: yellow; */
+    margin-top: 10px; 
+}
+
+#choices {
+    width: 50%;
+    height: 80px;
+    /* background-color: green; */
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#choices img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+#choices img:hover{
+    box-shadow: 0 0 10px 10px grey;
+}
+
+button.restartrockpaperscissors {
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 4px 8px;
+    margin: 20px auto;
+    border: 2px solid black;
+    color: black;
+    background-color: transparent;
+}
+
+button.restartrockpaperscissors:hover{
+    color: white;
+    background-color: black;
+}
