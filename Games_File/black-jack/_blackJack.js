@@ -52,10 +52,10 @@ function startGame() {
     // console.log(hidden);
     // console.log(dealerSum);
     while (dealerSum < 17) {
-        //<img src="Games/black-jack/4-C.png">
+        //<img src="Games_File/black-jack/4-C.png">
         var cardImg = document.createElement("img");
         var card = deck.pop();
-        cardImg.src = "../Games/black-jack/" + card + ".png";
+        cardImg.src = "../Games_File/black-jack/" + card + ".png";
         dealerSum += getValue(card);
         dealerAceCount += checkAce(card);
         document.getElementById("dealer-cards").append(cardImg);
@@ -65,7 +65,7 @@ function startGame() {
     for (var i = 0; i < 2; i++) {
         var cardImg = document.createElement("img");
         var card = deck.pop();
-        cardImg.src = "../Games/black-jack/" + card + ".png";
+        cardImg.src = "../Games_File/black-jack/" + card + ".png";
         yourSum += getValue(card);
         yourAceCount += checkAce(card);
         document.getElementById("your-cards").append(cardImg);
@@ -83,7 +83,7 @@ function hit() {
 
     var cardImg = document.createElement("img");
     var card = deck.pop();
-    cardImg.src = "../Games/black-jack/" + card + ".png";
+    cardImg.src = "../Games_File/black-jack/" + card + ".png";
     yourSum += getValue(card);
     yourAceCount += checkAce(card);
     document.getElementById("your-cards").append(cardImg);
@@ -98,7 +98,7 @@ function stay() {
     yourSum = reduceAce(yourSum, yourAceCount);
 
     canHit = false;
-    document.getElementById("hidden").src = "../Games/black-jack/" + hidden + ".png";
+    document.getElementById("hidden").src = "../Games_File/black-jack/" + hidden + ".png";
 
     var message = "";
     if (yourSum > 21) {
@@ -141,7 +141,7 @@ function resetGame() {
     canHit = true;
     deck = [];
 
-    document.getElementById("dealer-cards").innerHTML = '<img id="hidden" src="../Games/black-jack/BACK.png">';
+    document.getElementById("dealer-cards").innerHTML = '<img id="hidden" src="../Games_File/black-jack/BACK.png">';
     document.getElementById("your-cards").innerHTML = '';
 
     document.getElementById("dealer-sum").innerText = '';

@@ -1,11 +1,13 @@
-<link rel="stylesheet" href="../partials/_head.php">
-<link rel="stylesheet" href="../Games/black-jack/_blackjack.css">
+<?php include "../partials/_head.php" ?>
+
+<link rel="stylesheet" href="../partials/_modal.css">
+<link rel="stylesheet" href="../Games_File/black-jack/_blackjack.css">
 <div id="blackJack" class="modal">
     <a href="../games.php" id='closeblackJac' class="close">&times;</a>
     <div class="blackjack">
         <h2>Dealer: <span id="dealer-sum"></span></h2>
         <div id="dealer-cards">
-            <img id="hidden" src="../Games/black-jack/BACK.png">
+            <img id="hidden" src="../Games_File/black-jack/BACK.png">
         </div>
         <h2>You: <span id="your-sum"></span></h2>
         <div id="your-cards"></div>
@@ -19,8 +21,5 @@
 </div>
 
 
-<script src="../Games/black-jack/_blackJack.js"></script>
-
-<script>
-
-</script>
+<script src="../Games_File/black-jack/_blackJack.js"></script>
+<?php include 'partials/_progress.php'?>

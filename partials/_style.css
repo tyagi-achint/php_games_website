@@ -524,7 +524,7 @@ footer a {
 
   #more-games,
   .games-container,
-  #games {
+  #games,.modal {
     display: none;
   }
 

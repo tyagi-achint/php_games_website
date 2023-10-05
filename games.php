@@ -6,13 +6,7 @@
 <body>
     <?php include 'partials/_navbar.php'?>
 
-    <div class="progress" style="margin:80px auto">
-        <div class="topcontainer" data-uk-scrollspy="{cls:'uk-animation-fade', delay: 300, repeat: true}">
-            <p><span class="fa fa-signal"></span></p>
-            <h1><span>Progress</span><br />is coming soon</h1>
-            <p>It's almost ready ... honest</p>
-        </div>
-    </div>
+    <?php include 'partials/_progress.php'?>
 
 
     <div id="games" class="games-container">
