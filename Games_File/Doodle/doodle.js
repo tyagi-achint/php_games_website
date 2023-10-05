@@ -659,7 +659,7 @@ function saveScoreToDatabase(playerScore, playerName) {
     playerScore: playerScore, playerName: playerName
   };
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'SaveScore/Doodle.php', true);
+  xhr.open('POST', '../SaveScore/Doodle.php', true);
   xhr.setRequestHeader('Content-Type', 'application/json');
   xhr.onreadystatechange = function () {
     if (xhr.readyState === XMLHttpRequest.DONE) {
