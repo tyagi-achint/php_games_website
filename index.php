@@ -2,6 +2,7 @@
 <html lang="en">
 
 <?php include 'partials/_head.php'?>
+<link rel='stylesheet' href='partials/_style.css' />
 
 <body>
     <?php include 'partials/_navbar.php'?>
@@ -13,15 +14,15 @@
 
 
     <div class="games-container">
-        <div>
-            <button id="doodle_game"><img src="images/Doodle.jpg" alt="Doodle_Game" />
-                <h4>Doodle</h4>
-                <button>
+        <div><a href="Games_php/Doodle.php">
+                <button id="doodle_game"><img src="images/Doodle.jpg" alt="Doodle_Game" />
+                    <h4>Doodle</h4>
+                    <button></a>
         </div>
-        <div>
-            <button id="colourMemory"><img src="images/colour_game.jpg" alt="Colour_Game" />
-                <h4>Colour Memory</h4>
-            </button>
+        <div><a href="Games_php/Colour_memory.php">
+                <button id="colourMemory"><img src="images/colour_game.jpg" alt="Colour_Game" />
+                    <h4>Colour Memory</h4>
+                </button></a>
         </div>
     </div>
 

@@ -80,23 +80,10 @@ function checkAnswer(currentLevel) {
 }
 
 
-var howToPlayColour = document.getElementById("howtoMenuColour");
-howToPlayColour.addEventListener("click", function () {
-  if (!started) {
-    document.querySelector(".playButtons").classList.toggle("contentHide");
-    document.querySelector(".howToPlayColour").classList.toggle("contentHide");
-    document.querySelector(".btnStart").classList.toggle("contentHide");
-    document.querySelector("#level-title").classList.toggle("contentHide");
-    howToPlayColour.innerText = (howToPlayColour.innerText === "How to Play?") ? "Back to Game" : "How to Play?";
-  }
-});
 
 
-function resetGame() {
-  setTimeout(function () {
-    location.reload();
-  }, 100);
-}
+
+
 
 function saveScoreToDatabase(playerScore, playerName) {
   var data = {

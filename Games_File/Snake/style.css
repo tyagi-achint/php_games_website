@@ -1,4 +1,4 @@
-#snake_game .snake_game{
+ .game{
   text-align: center;
   background-color: aliceblue;
   width: 60%;
@@ -8,7 +8,7 @@
 }
 
 
-#snake_game .container {
+ .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@
   height: 100%;
 }
 
-#snake_game header {
+ header {
   display: flex;
   justify-content: space-between;
   width: calc(15px * 17);
@@ -27,24 +27,24 @@
 
 }
 
-#snake_game .grid {
+ .grid {
   display: grid;
   grid-template-columns: repeat(15, auto);
   grid-template-rows: repeat(15, auto);
   border: 10px solid black;
 }
-#snake_game .tile {
+ .tile {
   position: relative;
   width: 15px;
   height: 15px;
 }
-#snake_game .content {
+ .content {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-#snake_game h2 {
+ h2 {
   margin-top: 20px;
   max-width: calc(15px * 17);
   text-align: center;
@@ -58,49 +58,3 @@
 
 
  
-#snake_game .howToPlay {
-  text-align: left;
-  border: 3px solid grey;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px 0 grey;
-  background-color: azure;
-}
-.howToPlay ul{
-  
-padding-left: 5vw;
-}
-
-#snake_game .howToPlay h1 {
-  font-family:  cursive;
-  font-size: 2rem;
-  margin: 0;
-  
-}
-
-#snake_game .howToPlay li {
-  list-style: disc;
-  font-family: "Acme", sans-serif;
-  font-size: x-large;
-}
-
-
- .contentHide{
-  display: none  !important;
-}
-
-#snake_game .otherbtn {
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: larger;
-  padding: 6px 14px;
-  display: inline-block;
-  border: 2px solid grey;
-  border-radius: 10px;
-}
-
-#snake_game .otherbtn:hover{
-  color: whitesmoke;
-  background-color: grey;
-}

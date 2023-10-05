@@ -2,12 +2,12 @@ const random = () => {
     return Math.round(Math.random())
 };
 let flag = 1;
-const allBtn = document.querySelector('#tictactoe .game-pad'),
-    statusBar = document.querySelector('#tictactoe #Status'),
+const allBtn = document.querySelector('.game-pad'),
+    statusBar = document.querySelector('#Status'),
 
-    allInput = allBtn.querySelectorAll('#tictactoe input'),
-    restartBtn = document.querySelector('#tictactoe .restart-btn')
-let [a1, a2, a3, a4, a5, a6, a7, a8, a9] = document.querySelectorAll('#tictactoe .game-pad input');
+    allInput = allBtn.querySelectorAll('input'),
+    restartBtn = document.querySelector('.restart-btn')
+let [a1, a2, a3, a4, a5, a6, a7, a8, a9] = document.querySelectorAll('.game-pad input');
 let b1, b2, b3, b4, b5, b6, b7, b8, b9;
 
 //Show 'X' or 'O' when click the button
@@ -150,13 +150,7 @@ allBtn.addEventListener('click', (e) => {
     }
 })
 
-//Call restart function when click button
-restartBtn.addEventListener('click', restart)
 
 
 
-function resetGame() {
-    setTimeout(function () {
-        location.reload();
-    }, 1)
-}
+

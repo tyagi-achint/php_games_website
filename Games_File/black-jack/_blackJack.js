@@ -12,14 +12,13 @@ var canHit = true;
 
 
 
-
-
-if (document.getElementById("blackJack")) {
-
+window.addEventListener("load", () => {
     buildDeck();
     shuffleDeck();
     startGame();
-};
+});
+
+
 
 
 function buildDeck() {
@@ -103,24 +102,30 @@ function stay() {
     var message = "";
     if (yourSum > 21) {
         message = "You Lose!";
+        messageColor = "red";
     }
     else if (dealerSum > 21) {
         message = "You Win!";
+        messageColor = "green";
     }
     // both you and dealer <= 21
     else if (yourSum == dealerSum) {
         message = "Tie!";
+        messageColor = "purple";
     }
     else if (yourSum > dealerSum) {
         message = "You Win!";
+        messageColor = "green";
     }
     else if (yourSum < dealerSum) {
         message = "You Lose!";
+        messageColor = "red";
     }
 
     document.getElementById("dealer-sum").innerText = dealerSum;
     document.getElementById("your-sum").innerText = yourSum;
     document.getElementById("results").innerText = message;
+    document.getElementById("results").style.color = messageColor;
 
 
     setTimeout(function () {

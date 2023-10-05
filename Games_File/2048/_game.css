@@ -1,4 +1,4 @@
-#game_2048 #board_game {
+ #board_game {
     width: 406px;
     height: 400px;
     background-color: #cdc1b5;
@@ -8,18 +8,18 @@
 
 }
 
-#game_2048 .game{
+ .game{
     
  
     text-align: center;
     width: 50%;
     padding: 10px 0;
-    margin:0 auto 20px;
+    margin:0 auto ;
     border: 2px solid grey;
     border-radius: 10px;
     box-shadow: 0 0  20px 10px aliceblue;
 }
-#game_2048 h1 {
+ h1 {
     text-align: center;
     font-family: Fredoka One;
     font-weight: 100;
@@ -29,7 +29,7 @@
 }
 
 
-#game_2048 .tile {
+ .tile {
     width: 91px;
     height: 91px;
     border: 5px solid #bbada0;
@@ -44,83 +44,83 @@ margin: auto;
 
 /* colored tiles */
 
-#game_2048 .x2 {
+ .x2 {
     background-color: #eee4da;
     color: #727371;
 }
 
-#game_2048 .x4 {
+ .x4 {
     background-color: #ece0ca;
     color: #727371;
 }
 
-#game_2048 .x8 {
+ .x8 {
     background-color: #f4b17a;
     color: white;
 }
 
-#game_2048 .x16{
+ .x16{
     background-color: #f59575;
     color: white;
 }
 
-#game_2048 .x32{
+ .x32{
     background-color: #f57c5f;
     color: white;
 }
 
-#game_2048 .x64{
+ .x64{
     background-color: #f65d3b;
     color: white;
 }
 
-#game_2048 .x128{
+ .x128{
     background-color: #edce71;
     color: white;
 }
 
-#game_2048 .x256{
+ .x256{
     background-color: #edcc63;
     color: white;
 }
 
-#game_2048 .x512{
+ .x512{
     background-color: #edc651;
     color: white;
 }
 
-#game_2048 .x1024{
+ .x1024{
     background-color: #eec744;
     color: white;
 }
 
-#game_2048 .x2048{
+ .x2048{
     background-color: #ecc230;
     color: white;
 }
 
-#game_2048 .x4096 {
+ .x4096 {
     background-color: #fe3d3d;
     color: white;
 }
 
-#game_2048 .x8192 {
+ .x8192 {
     background-color: #ff2020;
     color: white;
 }
 
 
-#game_2048 button.restart2048 {
+ button.restart2048 {
     border-radius: 5px;
 
     font-weight: 600;
-    padding: 4px 8px;
+    padding: 8px 16px;
     margin: 20px auto;
     border: 2px solid grey;
     color: grey;
 }
 
-#game_2048 button.restart2048:hover{
+ button.restart2048:hover{
     color: white;
     background-color: grey;
 }

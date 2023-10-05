@@ -8,14 +8,14 @@
 
 
   
-  #tictactoe .game-pad {
+ .game-pad {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 60%;
     margin: auto;
     margin-top: 2rem;
   }
-  #tictactoe .game-pad input {
+ .game-pad input {
     background-color: rgb(232, 231, 231);
     border: 1px solid grey;
     outline: none;
@@ -26,10 +26,10 @@
     cursor: pointer;
     text-align: center;
   }
-  #tictactoe .game-pad .click {
+ .game-pad .click {
     border: 2px solid black;
   }
-  #tictactoe p {
+ p {
     color: black;
     border: 2px solid black;
     width: 60%;
@@ -41,7 +41,7 @@
     box-shadow: 2px 3px 30px rgb(65, 64, 64);
     transition: 0.3s;
   }
-  #tictactoe .status {
+ .status {
     animation: notwin 0.1s ease normal 6;
   }
   @keyframes notwin {
@@ -53,7 +53,7 @@
     }
   }
   
-  #tictactoe button {
+.restart-btn {
     border: 1mm solid gray;
     width: 20%;
     background-color: gray;
@@ -65,14 +65,14 @@
     visibility: hidden;
     cursor: pointer;
   }
-  #tictactoe button:hover {
+.restart-btn:hover {
     background-color: rgb(255, 255, 255);
     color: gray;
   }
-  #tictactoe .active {
+ .active {
     visibility: visible;
   }
-  #tictactoe .disable {
+ .disable {
     pointer-events: none;
   }
   

@@ -3,6 +3,7 @@
 <?php include 'partials/_server.php'?>
 
 <?php include 'partials/_head.php'?>
+<link rel='stylesheet' href='partials/_style.css' />
 
 <body>
     <?php include 'partials/_navbar.php'?>

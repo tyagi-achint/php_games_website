@@ -1,47 +1,33 @@
-<div id="connect_4" class="modal">
-    <div class="modal-content">
-        <span id='closeconnect_4' class="close">&times;</span>
+<?php include "../partials/_head.php" ?>
+<link rel="stylesheet" href="../partials/_modal.css">
+<link rel="stylesheet" href="../Games_File/Connect4/connect_4.css">
+
+
+<div class="modal">
+    <a href="../games.php" class="close">&times;</a>
+    <div class=" game">
         <h2 id="winner"></h2>
         <div id="board_connect4"></div>
+        <button class="restartConnect4" onclick="restartGame()">Restart</button>
+
     </div>
+    <div class="howToPlay contentHide">
+        <h1>How to Play Connect 4</h1>
+        <ul>
+            <li>Click on a column to drop your piece into the grid.</li>
+            <li>Try to connect four of your pieces vertically, horizontally, or diagonally to win.</li>
+            <li>The game alternates between RED and YELLOW players.</li>
+            <li>The player who forms a winning sequence of four pieces first wins the game.</li>
+            <li>If the grid is filled without a winner, the game is declared a draw.</li>
+            <li>Click the "Restart" button to start a new game.</li>
+        </ul>
+
+    </div>
+    <button class="howToPlayButton">How to Play?</button>
+
 </div>
 
 
-
-
-
-<script>
-var connect_4 = document.getElementById("connect_4");
-var connect4 = document.getElementById("Connect4");
-var spanconnect_4 = document.getElementById("closeconnect_4");
-
-connect4.onclick = function() {
-    var linkElement = document.createElement("link");
-    linkElement.rel = "stylesheet";
-    linkElement.href = "Games/Connect4/connect_4.css";
-    linkElement.id = "custom-css";
-    document.head.appendChild(linkElement);
-
-    var scriptElement = document.createElement("script");
-    scriptElement.src = "Games/Connect4/connect_4.js";
-    scriptElement.onload = function() {
-        connect_4.style.display = "block";
-    };
-    document.body.appendChild(scriptElement);
-}
-
-spanconnect_4.onclick = function() {
-    resetGame();
-    var linkElement = document.getElementById("custom-css");
-    if (linkElement) {
-        linkElement.remove();
-    }
-
-    if (connect_4.style.display = "none") {
-        var scriptElement = document.querySelector('script[src="Games/Connect4/connect_4.js"]');
-        if (scriptElement) {
-            scriptElement.remove();
-        }
-    }
-}
-</script>
+<script src="../Games_File/Connect4/connect_4.js"></script>
+<?php include '../partials/_progress.php'?>
+<script src="../partials/_model.js"></script>
