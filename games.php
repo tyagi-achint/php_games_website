@@ -24,7 +24,7 @@
         </div>
         <div><a href="Games_php/Doodle.php">
                 <button id="doodle_game"><img src="images/Doodle.jpg" alt="Doodle_Game" />
-                    <h4>Doodle</h4>
+                    <h4>Doodle Jump</h4>
                     <button></a>
         </div>
         <div><a href="Games_php/Snake.php">
