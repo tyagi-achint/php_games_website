@@ -1,6 +1,6 @@
 #board_connect4{
-    height: 540px;
-    width: 598px;
+  height: 570px;
+  max-width: calc(7*85px);;
     background-color: #1f90ff;
     border: 20px solid #007fff;
     border-radius: 15px;
@@ -19,7 +19,7 @@
   .tile {
     height: 70px;
     width: 70px;
-    margin: 5px;
+    margin: 5px auto;
    
     background-color: rgb(230, 230, 230);
     border-radius: 50%;
